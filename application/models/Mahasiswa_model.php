@@ -1,8 +1,9 @@
 <?php
 
-class Mahasiswa_model CI_Model
+class Mahasiswa_model extends CI_Model
 {
-    public function getMahasiswa(){
+    public function getMahasiswa()
+    {
         return $this->db->get('mahasiswa')->result_array();
     }
 }
